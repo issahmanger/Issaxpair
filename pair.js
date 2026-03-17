@@ -58,7 +58,7 @@ router.get('/', async (req, res) => {
                     try {
                         await delay(3000);
                         let b64data = Buffer.from(JSON.stringify(state.creds)).toString('base64');
-                        let sessionId = 'DAVE-X:~' + b64data;
+                        let sessionId = 'ISSA-X:~' + b64data;
 
                         setSession(id, { status: 'connected', sessionId });
 
@@ -67,9 +67,9 @@ router.get('/', async (req, res) => {
                         let xhypher_MD_TEXT = `
 ╔════════════════════
 ║ 🟢 SESSION CONNECTED ◇
-║ ✓ BOT: DAVE-X
+║ ✓ BOT: ISSA-X
 ║ ✓ TYPE: BASE64
-║ ✓ OWNER: Dave Tech
+║ ✓ OWNER: Issa Tech
 ║ ✓SUPPORT: https://t.me/Digladoo
 ╚════════════════════`;
 
